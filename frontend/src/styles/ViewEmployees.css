@@ -1,0 +1,51 @@
+/* src/components/ViewEmployees.css */
+
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+    text-align: left;
+   
+}
+
+.employee-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    
+}
+
+.employee-table th,
+.employee-table td {
+    padding: 10px 15px;
+    border-left:2px solid #009879 ;
+}
+
+
+.employee-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.employee-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.employee-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+    border-left:2px solid #009879 ;
+}
+
+.delete-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}

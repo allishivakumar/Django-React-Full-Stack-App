@@ -1,0 +1,122 @@
+/* Overall layout and structure */
+.attendance-container {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin-top: -20px;
+ 
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Employee list */
+  .employee-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .employee-list li {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .employee-list li input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .employee-list li:hover {
+    background-color: #eee;
+  }
+  
+  /* Mark attendance section */
+  .mark-attendance {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .mark-attendance input[type="date"] {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+  
+  .mark-attendance select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+  
+  .mark-attendance button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    cursor: pointer;
+  }
+  
+  .mark-attendance button:hover {
+    background-color: #3e8e41; /* Darker green */
+  }
+  
+  /* Filter by date section */
+  .section.filter-by-date {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Attendance records table */
+  .attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .attendance-table thead th {
+    padding: 10px;
+    text-align: left;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+  }
+  
+  .attendance-table tbody tr {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .attendance-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .attendance-table tbody tr td {
+    padding: 5px 10px;
+    border: none;
+  }
+  
+  /* Optional: Add some color and animations */
+  .attendance-container h1 {
+    color: #3f51b5; /* Blue */
+  }
+  
+  .attendance-container button:active {
+    transform: translateY(2px);
+  }
+  

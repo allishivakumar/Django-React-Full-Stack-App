@@ -1,0 +1,180 @@
+/* Container for the whole page */
+div {
+  font-family: Arial, sans-serif;
+}
+
+
+/* Styles for the form section */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: auto;
+  margin-top: 43px;
+}
+
+form h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/* src/styles/Home.css */
+.main-content {
+  margin-left: 250px; /* Same as the width of the side navigation */
+  padding: 20px;
+  padding-top: 60px; /* To account for the height of the header */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+
+h3 {
+  margin-top: 0;
+}
+
+form input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+/* src/styles/Navbar.css */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-item {
+  padding: 14px 20px;
+}
+
+.navbar-item a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar-item a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* src/styles/Home.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#009879;
+  color: black;
+  height:55px;
+  padding: 0px 16px;
+  position: fixed;
+  width: calc(100% - 200px); 
+  left: 170px; 
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+
+.main-content {
+  margin-left: 200px; /* Same as the width of the side navigation */
+  padding: 20px;
+  padding-top: 80px; /* To account for the height of the header */
+}
+.home {
+  margin: 20px;
+  text-align: center;
+  width:1000px;
+}
+
+.home h2 {
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  
+
+  
+}
+
+.stat-item1,
+.stat-item2,
+.stat-item3 {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-color: #009879;
+
+}
+
+
+.clock-container {
+  margin-top: 20px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5em;
+  color: #009879;
+}
+
+.error {
+  text-align: center;
+  font-size: 1.2em;
+  color: #dc3545;
+}
+
+.view-button {
+  background-color: #009879;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.view-button a{
+  color: inherit;
+  text-decoration:dashed;
+}

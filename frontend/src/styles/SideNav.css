@@ -1,0 +1,48 @@
+/* src/styles/SideNav.css */
+.sidenav {
+    height: 100%;
+    width: 170px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #7bdeca;
+    overflow-x: hidden;
+    padding-top: 20px;
+    color: white;
+}
+
+.sidenav h2 {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidenav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidenav-item {
+    padding: 8px 16px;
+    text-align: center;
+}
+
+.sidenav-item a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav-item a:hover {
+    color: #f1f1f1;
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+}

@@ -1,0 +1,93 @@
+/* src/components/Layout.css */
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    background-color: #f3f3f3;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    color: #009879;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    width: fit-content;
+    position: absolute;
+    left: 171px;
+}
+.contentadd{
+   margin-left: 250px;
+    
+}
+
+.search-input {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    border:2px solid #009879;;
+}
+
+.employee-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.employee-table th,
+.employee-table td {
+    padding: 12px 15px;
+}
+
+.employee-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.employee-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.employee-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}

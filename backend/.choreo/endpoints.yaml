@@ -6,3 +6,8 @@ endpoints:
     type: REST
     networkVisibility: Public
     context: /
+
+build:
+  steps:
+    - name: gcr.io/buildpacks/builder:v1
+      args: ["--layers=/workspace/layers", "--app=/workspace", "--path=/workspace", "--buildpacks=/layers/google.python.pip", "--env=APT_ARTIFACTS=/workspace/apt"]
